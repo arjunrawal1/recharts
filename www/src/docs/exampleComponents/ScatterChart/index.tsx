@@ -16,6 +16,8 @@ import { ChartExample } from '../types.ts';
 import ScatterChartPerformance from './ScatterChartPerformance';
 import scatterChartPerformanceSource from './ScatterChartPerformance?raw';
 import ScatterChartNavExample from './ScatterChartNavExample';
+import CustomAnimationExample, { CustomAnimationControls } from './CustomAnimationExample.tsx';
+import CustomAnimationExampleSource from './CustomAnimationExample.tsx?raw';
 
 export { ScatterChartNavExample };
 
@@ -59,5 +61,17 @@ export const scatterChartExamples: Record<string, ChartExample> = {
     Component: ScatterChartPerformance,
     sourceCode: scatterChartPerformanceSource,
     name: 'Scatter Chart with many points (performance test)',
+  },
+  CustomAnimation: {
+    Component: CustomAnimationExample,
+    sourceCode: CustomAnimationExampleSource,
+    name: 'Custom Animation',
+    description: (
+      <p>
+        Uses new <code>animationInterpolateFn</code> prop introduced in version 3.9 to implement custom animation.
+      </p>
+    ),
+    Controls: CustomAnimationControls,
+    defaultTool: 'controls',
   },
 };
