@@ -18,8 +18,8 @@ import { ChartExample } from '../types.ts';
 import AreaChartNavExample from './AreaChartNavExample';
 import AreaChartWithCustomEvents from './AreaChartWithCustomEvents';
 import areaChartWithCustomEventsSource from './AreaChartWithCustomEvents?raw';
-import AreaChartCustomAnimationExample from './AreaChartCustomAnimationExample.tsx';
-import AreaChartCustomAnimationExampleSource from './AreaChartCustomAnimationExample.tsx?raw';
+import AreaChartCustomAnimationExample, { AreaChartCustomAnimationControls } from './AreaChartCustomAnimationExample';
+import AreaChartCustomAnimationExampleSource from './AreaChartCustomAnimationExample/index.tsx?raw';
 
 export { AreaChartNavExample };
 
@@ -75,6 +75,8 @@ export const areaChartExamples: Record<string, ChartExample> = {
   AreaChartCustomAnimation: {
     Component: AreaChartCustomAnimationExample,
     sourceCode: AreaChartCustomAnimationExampleSource,
+    Controls: AreaChartCustomAnimationControls,
     name: 'Custom Animation Example',
+    defaultTool: 'controls',
   },
 };

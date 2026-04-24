@@ -41,6 +41,8 @@ import AnimatedBarWidthExample from './AnimatedBarWidthExample';
 import animatedBarWidthSource from './AnimatedBarWidthExample?raw';
 import WaterfallExample from './WaterfallExample';
 import waterfallExampleSource from './WaterfallExample?raw';
+import AnimatedBarTimeSeriesExample, { AnimatedBarTimeSeriesExampleControls } from './AnimatedBarTimeSeriesExample.tsx';
+import AnimatedBarTimeSeriesExampleSource from './AnimatedBarTimeSeriesExample.tsx?raw';
 
 export { BarChartNavExample };
 
@@ -201,5 +203,12 @@ export const barChartExamples: Record<string, ChartExample> = {
         </p>
       </article>
     ),
+  },
+  AnimatedBarTimeSeriesExample: {
+    Component: AnimatedBarTimeSeriesExample,
+    sourceCode: AnimatedBarTimeSeriesExampleSource,
+    Controls: AnimatedBarTimeSeriesExampleControls,
+    name: 'Animated Bar series',
+    defaultTool: 'controls',
   },
 };
