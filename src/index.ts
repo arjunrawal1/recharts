@@ -91,6 +91,7 @@ export { Line } from './cartesian/Line';
 export type { Props as LineProps, LinePointItem } from './cartesian/Line';
 export { Area } from './cartesian/Area';
 export type { Props as AreaProps } from './cartesian/Area';
+export type { AreaPointItem } from './state/selectors/areaSelectors';
 export { Bar } from './cartesian/Bar';
 export type { Props as BarProps, BarRectangleItem, BarShapeProps } from './cartesian/Bar';
 export { BarStack } from './cartesian/BarStack';
@@ -238,3 +239,5 @@ export { createCentricChart, createRadialChart } from './util/createPolarCharts'
 export type { TypedHorizontalChartContext, TypedVerticalChartContext, NoFunnel } from './util/createCartesianCharts';
 
 export type { TypedCentricChartContext, TypedRadialChartContext, NoRadial, NoCentric } from './util/createPolarCharts';
+
+export { interpolate } from './util/DataUtils';
